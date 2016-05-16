@@ -21,6 +21,11 @@ Plugin 'morhetz/gruvbox'
 
 Plugin 'terryma/vim-smooth-scroll'
 
+Plugin 'ctrlpvim/ctrlp.vim'
+
+Plugin 'vim-airline/vim-airline'
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
@@ -41,4 +46,15 @@ endif
 nmap <S-Enter> O<Esc>j
 nmap <CR> o<Esc>k
 
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+"enable airline
+set laststatus=2
+
+nmap <C-S> :w<CR>
+imap <C-S> <Esc>:w<CR>i
 colorscheme gruvbox
